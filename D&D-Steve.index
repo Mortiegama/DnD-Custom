@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Steve's Custom D&D</name>
+		<description>Personal D&D Customizations Created By Steve</description>
+		<update version="0.1.0">
+			<file name="dnd-Steve.index" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki.index" />
+		</update>
+	</info>
+	<files>		
+		<!-- races -->
+
+		<!-- classes -->
+
+
+		<!-- backgrounds -->
+		<file name="background-adventurer.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki/backgrounds/background-adventurer.xml" />
+		<file name="background-apothecary.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki/backgrounds/background-apothecary.xml" />
+		<file name="background-prospector.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki/backgrounds/background-prospector.xml" />
+		<file name="background-islander.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki/backgrounds/background-islander.xml" />
+		<file name="background-witchhunter.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki/backgrounds/background-witchhunter.xml" />
+		<file name="background-bounty-hunter.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dnd-wiki/backgrounds/background-bounty-hunter.xml" />
+
+		<!-- feats -->
+
+	
+		<!-- spells -->
+
+		<!-- items -->
+
+	</files>
+</index>
