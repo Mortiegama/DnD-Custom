@@ -4,7 +4,7 @@
         <name>Woodsman Background</name>
         <description>5e Stevebrew</description>
         <update version="0.0.1">
-            <file name="background-adventurer.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/custom/background-woodsman.xml" />
+            <file name="background-adventurer.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/background-woodsman.xml" />
         </update>
     </info>
     <element name="Woodsman" type="Background" source="Stevebrew" id="ID_STEVE_BACKGROUND_WOODSMAN">
