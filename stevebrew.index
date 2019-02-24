@@ -6,9 +6,9 @@
 		</update>
 	</info>
 	<files>
-		<file name="sources.xml" url="https://github.com/Mortiegama/DnD-Custom/Master/sources.xml" />
+		<file name="sources.xml" url="https://github.com/Mortiegama/DnD-Custom/Master/Stevebrew/sources.xml" />
 		
 		<!-- archetypes -->
-		<file name="background-woodsman" url="https://github.com/Mortiegama/DnD-Custom/Master/background-woodsman.xml" />
+		<file name="background-woodsman" url="https://github.com/Mortiegama/DnD-Custom/Master/Stevebrew/background-woodsman.xml" />
 	</files>
 </index>
