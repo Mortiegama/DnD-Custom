@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/sources.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/Stevebrew/sources.xml" />
 		</update>
 	</info>
 	<element name="Stevebrew" type="Source" source="Stevebrew" id="ID_STEVEBREW_SOURCE">
