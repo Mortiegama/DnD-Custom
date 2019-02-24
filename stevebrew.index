@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.2">
+		<name>Stevebrew</name>
+		<description>The 5e Stevebrew Collection.</description>
+		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">Stevebrew</author>
+		<update version="0.0.1">
 			<file name="stevebrew.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew.index" />
 		</update>
 	</info>
+	
 	<files>
 		<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/Stevebrew/sources.xml" />
 		
