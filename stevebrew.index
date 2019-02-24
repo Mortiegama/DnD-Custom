@@ -2,13 +2,13 @@
 <index>
 	<info>
 		<update version="0.0.2">
-			<file name="stevebrew.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/Master/Stevebrew.index" />
+			<file name="stevebrew.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/Stevebrew.index" />
 		</update>
 	</info>
 	<files>
-		<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/Master/Stevebrew/sources.xml" />
+		<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/Stevebrew/sources.xml" />
 		
 		<!-- archetypes -->
-		<file name="background-woodsman" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/Master/Stevebrew/background-woodsman.xml" />
+		<file name="background-woodsman" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/Stevebrew/background-woodsman.xml" />
 	</files>
 </index>
