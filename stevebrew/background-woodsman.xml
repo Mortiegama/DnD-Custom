@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+
+	<!-- Information Required For Background -->
     <info>
         <name>Woodsman Background</name>
         <description>5e Stevebrew</description>
@@ -7,59 +9,34 @@
             <file name="background-adventurer.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/background-woodsman.xml" />
         </update>
     </info>
-    <element name="Woodsman" type="Background" source="Stevebrew" id="ID_STEVE_BACKGROUND_WOODSMAN">
+	
+	<!-- Element Information -->
+    <element name="Woodsman" type="Background" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN">
+	
+		<!-- Description and Elements of the Background -->
         <description>
             <p>You grew up in a less developed place away from the major cities and towns.  Perhaps you even lived deep in the woods away from any people.  Either way, you spent a considerable amount of time in the forests hueing trees and hefting massive logs.</p>
-			<p><strong>Examples</strong></p>
-			<ul>
-				<li>Maybe your parents were adventurers</li>
-				<li>Maybe you were rescued by a group of adventurers who then raised you</li>
-				<li>Maybe being an adventurer is a respectable profession in your homeland</li>
-				<li>Maybe you ran away at a young age to become an adventurer</li>
-				<li>Maybe you grew up in an adventurers guild hall</li>
-				<li>Maybe you’re just starting out new and fresh to the profession</li>
-			</ul>
 			<p>Whatever the case is, you are willing and able to do work that nobody in their right mind would even consider. As an adventurer, you have likely traveled extensively, encountered violence and death, are comfortable around magic, and have likely seen many a strange, terrible, and wonderful thing. Many professional adventurers use a sort of professional slang or jargon resembling game terms, such as referring to people by their perceived "level", or ranking enemies by supposed "challenge ratings". What took you down this path, and where has it taken you? Are you pushed by some driving goal, or flee from some terrible thing? Or do you just go wherever the money flows? Are you an experienced party member, or are you more of the loner riding in the back of the cart? Were you trained up to be a professional, or did you learn by experience? What kinds of adventures have you had? What amazing sights have you seen? How have these experiences changed you? </p>
             <p>			
-				<strong>Skill Proficiencies:</strong> Athletics or Acrobatics, and Insight or Perception<br />
-				<strong>Tool Proficiencies:</strong> Thieves’ Tools.<br/>
+				<strong>Ability Score Increase:</strong> Strength<br />
+				<strong>Skill Proficiencies:</strong> Athletics, and Insight or Perception<br />
+				<strong>Tool Proficiencies:</strong> Carpenters' Tools.<br/>
 				<strong>Languages:</strong> You may speak two exotic languages, or you may be fully literate with one standard language. <br/>
-				<strong>Equipment:</strong> A wooden training sword, a set of traveler’s clothes, a small pouch containing 5gp, a shovel, a crowbar, one trophy, (such as a trinket from PHB p.160) one cloak.<br/>
             </p>
-			<h5>PARTY ROLE</h5>
-			<p>No adventurer is as great as the party, for no adventurer is quite alike. They must depend on the unique talents and tactics of their party to succeed in their dangerous world. </p>
-			<table>
-				<thead>
-					<tr><td>d8</td><td>Party Role</td></tr>
-				</thead>
-				<tr><td>1</td><td>The Brains</td></tr>
-				<tr><td>2</td><td>The Muscle</td></tr>
-				<tr><td>3</td><td>The Professional</td></tr>
-				<tr><td>4</td><td>The Coin</td></tr>
-				<tr><td>5</td><td>The Sneak</td></tr>
-				<tr><td>6</td><td>The Load</td></tr>
-			</table>
-            <div element="ID_WIKI_BACKGROUND_FEATURE_ADVENTURER_WANDERER" />
+            <div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_NATURE_ENTHUSIAST" />
+			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK" />
         </description>
-        <setters>
-            <set name="sourceUrl">https://www.dandwiki.com/wiki/Adventurer_(5e_Background)</set>
-        </setters>
+		
+		<!-- Qualities added to the Background -->
         <rules>
-			<select type="Proficiency" name="Skill Proficiency, 1 (Adventurer)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS" />
-			<select type="Proficiency" name="Skill Proficiency, 2 (Adventurer)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
-			<!-- You may speak two exotic languages, or you may be fully literate with one standard language. -->
+			<stat name="Strength" value="+1" requirements="!ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK" />
+			<grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<select type="Proficiency" name="Skill Proficiency, (Woodsman)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
 			<select type="Language" name="Language (Adventurer)" supports="Starting" optional="true" />
-            <grant type="Background Feature" id="ID_WIKI_BACKGROUND_FEATURE_ADVENTURER_WANDERER" />
-            <select name="Party Role" type="List" optional="true">
-                <item id="1">The Brains</item>
-                <item id="2">The Muscle</item>
-                <item id="3">The Professional</item>
-                <item id="4">The Coin</item>
-                <item id="5">The Sneak</item>
-                <item id="6">The Load</item>
-            </select>
-            <select name="Personality Trait" type="List" number="2">
+            <grant type="Background Feature" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_NATURE_ENTHUSIAST" />
+            <select type="Background Variant" name="Woodsman Variant" supports="WM Variant" optional="true" />         
+			<select name="Personality Trait" type="List" number="2">
                 <item id="1">I speak with an accent nobody recognizes.</item>
                 <item id="2">I look at the ceiling every time I enter a room, even if I was just there five seconds ago.</item>
                 <item id="3">I assume every job is a trap.</item>
@@ -95,9 +72,26 @@
             </select>
         </rules>
     </element>
-    <element name="Beloved Outcast" type="Background Feature" source="D&amp;D Wiki" id="ID_WIKI_BACKGROUND_FEATURE_ADVENTURER_WANDERER">
+	
+	<!-- Background Feature Information -->
+    <element name="Nature Enthusiast" type="Background Feature" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_NATURE_ENTHUSIAST">
         <description>
-            <p>You can always find a job, but somehow you can never find a place to sleep. People know you’re good for the work, but the fact that you are indicates that you’re probably not the sort of person they want to have around. People view adventurers in a mixed light with conflicting values. On the one hand, most adventurers are nothing more than murderous, grave-robbing vagrants. On the other hand, who else will rob that grave and murder those local bullies for you? Most common folk consider adventurers to be dangerous, unpredictable, and probably insane... But in a world filled with slavers, mad cults, dragons, walking dead, pit fiends, and extradimensional horrors, just about everyone could find a use for a psychotic sell-sword. Adventurers who survive and reach higher renown may find they have a small following of supporters or fans, but even they may cringe at the idea of that adventurer spending an evening in their home. Most adventurers by profession are members of an adventurers guild through which they can readily attain professional work and contacts in the field.</p>
+            <p>CHANGED!s!! always find a job, but somehow you can never find a place to sleep. People know you’re good for the work, but the fact that you are indicates that you’re probably not the sort of person they want to have around. People view adventurers in a mixed light with conflicting values. On the one hand, most adventurers are nothing more than murderous, grave-robbing vagrants. On the other hand, who else will rob that grave and murder those local bullies for you? Most common folk consider adventurers to be dangerous, unpredictable, and probably insane... But in a world filled with slavers, mad cults, dragons, walking dead, pit fiends, and extradimensional horrors, just about everyone could find a use for a psychotic sell-sword. Adventurers who survive and reach higher renown may find they have a small following of supporters or fans, but even they may cringe at the idea of that adventurer spending an evening in their home. Most adventurers by profession are members of an adventurers guild through which they can readily attain professional work and contacts in the field.</p>
         </description>
     </element>
+	
+	<!-- Variants of the Background -->
+    <element name="Variant: Lumberjack" type="Background Variant" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK">
+        <supports>WM Variant</supports>
+        <description>
+            <p>Standing in contrast to the mercenaries who haul in anyone labelled a criminal for coin are those who target thieves, charlatans, and murderers exclusively - and for no material reward. Vigilantes areas often soldiers dumbstruck by newly-found social decay and corruption whence they return home from war, as they are wealthy citizens with a penchant for martial prowess an axe to grind against their city's seedy underbelly for a past, personal transgression. As a matter of course, a particularly zealous vigilante may come into conflict with a bounty hunter, deeming her as guilty of violating the law as any brigand skulking about an alleyway. If you indeed wish to be a vigilante, select the Crime Doesn't Pay feature outlined below instead of the Names, Faces, and Places feature above. Living a life of vigilantism means that you will always be on the lookout for criminal activity, especially so if you're within the boundaries of a town or other settlement you claim as your home. The promise of payment never sways your decisions in whom you target, and you hold yourself to a higher code than your capricious counterparts - you consider it preferable to turn your marks over to the appropriate authorities instead of harming them. </p>
+            <p class="indent">City guard and militia are likely to turn a blind eye to your unsanctioned activities unless you cross someone in their rank, be they corrupted, prideful, or otherwise. Additionally, as your reputation grows, you will gradually earn the accolades and support of the common people who find their streets safer, and petty thugs less inclined to hold them at knifepoint over a few coins. At the same time, organizations and individuals accustomed to using their coffers to help guide a settlement's definition of "criminal" (such as a merchant house, corrupt council member, and the like) will gradually grow to resent and perhaps lash out at your burgeoning reputation. </p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+	
+	
+	
 </elements>
