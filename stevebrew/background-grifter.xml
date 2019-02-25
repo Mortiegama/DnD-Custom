@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<!-- Information Required For Background -->
+    <info>
+        <name>Grifter Background</name>
+        <description>5e Stevebrew</description>
+        <update version="0.0.1">
+            <file name="background-adventurer.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/background-grifter.xml" />
+        </update>
+    </info>
+	
+	<!-- Element Information -->
+    <element name="Grifter" type="Background" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_GRIFTER">
+	
+		<!-- Description and Elements of the Background -->
+        <description>
+            <p>You grew up in a less developed place away from the major cities and towns.  Perhaps you even lived deep in the woods away from any people.  Either way, you spent a considerable amount of time in the forests hueing trees and hefting massive logs.</p>
+			<p>Whatever the case is, you are willing and able to do work that nobody in their right mind would even consider. As an adventurer, you have likely traveled extensively, encountered violence and death, are comfortable around magic, and have likely seen many a strange, terrible, and wonderful thing. Many professional adventurers use a sort of professional slang or jargon resembling game terms, such as referring to people by their perceived "level", or ranking enemies by supposed "challenge ratings". What took you down this path, and where has it taken you? Are you pushed by some driving goal, or flee from some terrible thing? Or do you just go wherever the money flows? Are you an experienced party member, or are you more of the loner riding in the back of the cart? Were you trained up to be a professional, or did you learn by experience? What kinds of adventures have you had? What amazing sights have you seen? How have these experiences changed you? </p>
+            <p>			
+				<strong>Ability Score Increase:</strong> Dexterity<br />
+				<strong>Skill Proficiencies:</strong> Athletics, and Insight or Perception<br />
+				<strong>Tool Proficiencies:</strong> Carpenters' Tools.<br/>
+				<strong>Languages:</strong> You may speak two exotic languages, or you may be fully literate with one standard language. <br/>
+            </p>
+            <div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_NATURE_ENTHUSIAST" />
+			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK" />
+        </description>
+		
+		<!-- Qualities added to the Background -->
+        <rules>
+			<stat name="Dexterity" value="+1" requirements="!ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK" />
+			<grant type="Proficiency" name="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<select type="Proficiency" name="Skill Proficiency, (Woodsman)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+			<select type="Language" name="Language (Adventurer)" supports="Starting" optional="true" />
+            <grant type="Background Feature" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_NATURE_ENTHUSIAST" />
+            <select type="Background Variant" name="Woodsman Variant" supports="WM Variant" optional="true" />         
+			<select name="Personality Trait" type="List" number="2">
+                <item id="1">I speak with an accent nobody recognizes.</item>
+                <item id="2">I look at the ceiling every time I enter a room, even if I was just there five seconds ago.</item>
+                <item id="3">I assume every job is a trap.</item>
+                <item id="4">I take notes about everyone and everything I encounter everywhere I go.</item>
+                <item id="5">I leave marks for myself wherever I go, as messages to myself when I return. Their meaning is known only by me.</item>
+                <item id="6">I tell stories about my adventures to anyone who will listen. Even tales of woe and disaster are retold with enthusiasm!</item>
+                <item id="7">I am more accustomed to life on the road or underground than in a settlement or my actual "home".</item>
+                <item id="8">I only respect other adventurers</item>
+            </select>
+            <select name="Ideal" type="List">
+                <item id="1">Virtue. I am the sword of virtue for those in need! (Good)</item>
+                <item id="2">Curiosity. If the job is interesting, I’m in! (Neutral)</item>
+                <item id="3">Control. I’ll do the work, but some day I will return with a request... (Evil)</item>
+                <item id="4">Justice. I fill the cracks crime slips through. (Lawful)</item>
+                <item id="5">Wealth. I’m in it for the money! (Neutral)</item>
+                <item id="6">Boredom. Get me away from this boring life! (Chaotic)</item>
+            </select>
+            <select name="Bond" type="List">
+                <item id="1">The things I have with me are everything I have and everything I am.</item>
+                <item id="2">The people who raised me made me into an adventurer.</item>
+                <item id="3">I am on a quest to obtain some rare or important object.</item>
+                <item id="4">I can never linger anywhere for too long, or my secret will catch up to me.</item>
+                <item id="5">I cannot remember my past before I was an adventurer.</item>
+                <item id="6">I need to be the most famous adventurer alive.</item>
+            </select>
+            <select name="Flaw" type="List">
+                <item id="1">Adventuring has either made me jaded and pessimistic, or paranoid and jumpy.</item>
+                <item id="2">I am almost dangerously greedy.</item>
+                <item id="3">I cannot resist a drink, or the folk who serve it.</item>
+                <item id="4">I egregiously underestimate or overestimate the risks a job represents.</item>
+                <item id="5">I cannot maintain meaningful relationships.</item>
+                <item id="6">I cannot manage money to save my life. </item>
+            </select>
+        </rules>
+    </element>
+	
+	<!-- Background Feature Information -->
+    <element name="Nature Enthusiast" type="Background Feature" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_NATURE_ENTHUSIAST">
+        <description>
+            <p>CHANGED!s!! always find a job, but somehow you can never find a place to sleep. People know you’re good for the work, but the fact that you are indicates that you’re probably not the sort of person they want to have around. People view adventurers in a mixed light with conflicting values. On the one hand, most adventurers are nothing more than murderous, grave-robbing vagrants. On the other hand, who else will rob that grave and murder those local bullies for you? Most common folk consider adventurers to be dangerous, unpredictable, and probably insane... But in a world filled with slavers, mad cults, dragons, walking dead, pit fiends, and extradimensional horrors, just about everyone could find a use for a psychotic sell-sword. Adventurers who survive and reach higher renown may find they have a small following of supporters or fans, but even they may cringe at the idea of that adventurer spending an evening in their home. Most adventurers by profession are members of an adventurers guild through which they can readily attain professional work and contacts in the field.</p>
+        </description>
+    </element>
+	
+	<!-- Variants of the Background -->
+    <element name="Variant: Lumberjack" type="Background Variant" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK">
+        <supports>WM Variant</supports>
+        <description>
+            <p>Standing in contrast to the mercenaries who haul in anyone labelled a criminal for coin are those who target thieves, charlatans, and murderers exclusively - and for no material reward. Vigilantes areas often soldiers dumbstruck by newly-found social decay and corruption whence they return home from war, as they are wealthy citizens with a penchant for martial prowess an axe to grind against their city's seedy underbelly for a past, personal transgression. As a matter of course, a particularly zealous vigilante may come into conflict with a bounty hunter, deeming her as guilty of violating the law as any brigand skulking about an alleyway. If you indeed wish to be a vigilante, select the Crime Doesn't Pay feature outlined below instead of the Names, Faces, and Places feature above. Living a life of vigilantism means that you will always be on the lookout for criminal activity, especially so if you're within the boundaries of a town or other settlement you claim as your home. The promise of payment never sways your decisions in whom you target, and you hold yourself to a higher code than your capricious counterparts - you consider it preferable to turn your marks over to the appropriate authorities instead of harming them. </p>
+            <p class="indent">City guard and militia are likely to turn a blind eye to your unsanctioned activities unless you cross someone in their rank, be they corrupted, prideful, or otherwise. Additionally, as your reputation grows, you will gradually earn the accolades and support of the common people who find their streets safer, and petty thugs less inclined to hold them at knifepoint over a few coins. At the same time, organizations and individuals accustomed to using their coffers to help guide a settlement's definition of "criminal" (such as a merchant house, corrupt council member, and the like) will gradually grow to resent and perhaps lash out at your burgeoning reputation. </p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+	
+	
+	
+</elements>
