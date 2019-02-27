@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Entling</name>
+		<description></description>
+		<author url=".">Stevebrew</author>
+		<update version="0.0.1">
+			<file name="entling.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/race-entling.xml" />
+		</update>
+	</info>
+    
+	<element name="Entling" type="Race" source="Stevebrew" id="ID_STEVEBREW_RACE_ENTLING">
+		<description>
+			<p>Entlings are powerful tree-like humanoids that typically avoid contact with other humanoids.  They prefer the solitude of their forests, few venturing to the mountains where less fauna grows.  Slow to anger, they will not be the first into a fray but strike fear into the hearts of those against them when they do move into action.</p>
+			<h4>BARK AND LIMBS</h4>
+			<p>Entlings resemble a bipedal humanoid shape, though tower over many other races.  They can stand between 7 and 8 feet tall though their skin is far more like the bark of a tree.  Entlings have very long arms though still possess digited fingers and toes.  </p>
+			<p class="indent">The habitat an Entling grows to adulthood within (which takes 100 years), has a great influence on their appearance.  Slowly their skin will harden and take an almost bark look which resembles the trees they spend most of their time communing with.  Moss, grass, vines, rot, and other conditions are also pulled from the same habitat.</p>
+			<p class="indent">It is quite common for Entlings to grow fauna most commonly found in their habitat.  That is how you can usually tell where an Entling spent their youth.  After reaching 100 years of age their bodies no longer adapt to new habitats and will continue to grow in the manner they did for the first 100 years of their life.</p>
+			<h4>STRENGTH AND ARMOR</h4>
+			<p>Entlings are exceedingly powerful and well armored once they reached adulthood.  It is rumored that the older an Entling gets the stronger its barkskin grows as well.  Entlings however are typically stronger than most other races.  Their skin is also naturally one of the strongest of any races as well.</p>
+			<p class="indent">Entlings are usually rather calm however, choosing to spend their time alone in nature rather than involving themselves with other humanoids.  Slow to anger usually, you do not want to be on an Entlings bad side when they chose to action.</p>
+			<h4>SOLITARY AND STOIC</h4>
+			<p>Entlings are very solitary and do not typically form any sort of social gatherings.  As young Entlings it is not uncommon for them to cross paths or to share parts of a habitat with another, but upon adulthood most seek to claim a solitary place for themselves.</p>
+			<p class="indent">Some Entlings take to standing still, idly watching as the sky changes from day to night.  Entering a Treeish State is how Entlings chose to receive nourishment primarily; though they are capable of eating and drinking same as most humanoids.  There are those that believe Entlings never die (unless they are hewn) but rather fall asleep in their Treeish State and never awaken.</p>
+			<p class="indent">Little is known about how Entlings are born, save for old rumors that an Elf may whisper to a fresh sapling to wake it up.  Trees have long ago been believed to have learned the Elvish language and know it well even as a seed. </p>
+			<h4>ENTLING NAMES</h4>
+			<p>Entlings take names most akin to the woods and surroundings they call home prior to reaching adulthood as that habitat influences their bark-skin.</p>
+			<p><strong>Names:</strong> Birchenbranch, Spruceneedle, Bristlehowl, Blossomstream, Boulderoak, Grizzledtrunk, Beechnut, Cypressdale, Charredroot, Hollowfall</p>
+			<h4>ENTLING TRAITS</h4>
+			<p>Your Entling character has the following racial traits. These traits are also suitable for Entlings who have begun to venture from their seclusion in the forests.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2, and your Constitution score increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Entlings are considered to be adults around the age of 100, while they typically are hewed or forgotten and their age limit is not known otherwise.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> There are not so numerous an amount of Entlings and they tend to be very solitary.  Willing to help those who join their path, they do not line their paths up with any in particular and lean towards True Neutral.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Entlings can stand between 7 and 8 feet tall, resembling large tree trunks with arms and legs. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 40 feet.</p>
+			<p class="indent"><strong><em>Iron Bark.</em></strong> Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark lines your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p class="indent"><strong><em>Treeish State.</em></strong> When at rest, you can enter the Treeish State if there is non-desecrated dirt for your roots.  In this state you cannot attack, move or defend yourself, but you gain long rest in only four hours and your hit points are boosted temporarily by your level x 10 until you exit the Treeish State.  While in this state you are also capable of providing susitance for yourself without using rations.  You gain no benefit from any items while in this state.  Leaving the Treeish State takes one minute. </p>
+			<p class="indent"><strong><em>Nature Born.</em></strong> You have proficiency in the Nature skill.  You were born in nature and are one with nature.</p>
+			<p class="indent"><strong><em>Nature Resistance.</em></strong> You have resistance to nature damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Sylvan.</p>
+		</description>
+		<setters>
+			<set name="names" type="genderless">Birchenbranch, Spruceneedle, Bristlehowl, Blossomstream, Boulderoak, Grizzledtrunk, Beechnut, Cypressdale, Charredroot, Hollowfall</set>
+			<set name="names-format">$(name)</set>
+			<set name="height" modifier="2d8">7'7</set>
+			<set name="weight" modifier="2d6">345 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="Strength" value="2" />
+			<stat name="Constitution" value="1" />
+			<stat name="Speed" value="40" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_RESISTANCE" />
+		</rules>
+	</element>	    
+	<element name="Iron Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK">
+		<description>
+			<p>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark lines your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
+		</description>
+		<sheet>
+			<description>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark lines your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+		</sheet>
+		<rules>
+            <stat name="ac:natural" value="7" bonus="natural" />
+            <stat name="AC" value="ac:natural" equipped="[armor:none]" />					
+			<stat name="AC" value="ac:natural" bonus="armor" equipped="[armor:any]" />
+            <grant type="Ignore" id="ID_INTERNAL_IGNORE_AC_DEXTERITY_MODIFIER" />    
+		</rules>
+	</element>    
+	<element name="Treeish State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE">
+		<description>
+			<p>When at rest, you can enter the Treeish State if there is non-desecrated dirt for your roots.  In this state you cannot attack, move or defend yourself, but you gain long rest in only four hours and your hit points are boosted temporarily by your level x 10 until you exit the Treeish State.  You gain no benefit from any items while in this state.  Leaving the Treeish State takes one minute.</p>
+		</description>
+		<sheet>
+			<description>When at rest, you can enter the Treeish State if there is non-desecrated dirt for your roots.  In this state you cannot attack, move or defend yourself, but you gain long rest in only four hours and your hit points are boosted temporarily by your level x 10 until you exit the Treeish State.  You gain no benefit from any items while in this state.  Leaving the Treeish State takes one minute.</description>
+		</sheet>
+	</element>    
+	<element name="Nature Born" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN">
+		<description>
+			<p>You have proficiency in the Nature skill.  You were born in nature and are one with nature.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency in the Nature skill.  You were born in nature and are one with nature.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>	
+	<element name="Nature Resistance" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_RESISTANCE">
+		<description>
+			<p>You have resistance to nature damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to nature damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+		</rules>
+	</element>		
+	
+</elements>
