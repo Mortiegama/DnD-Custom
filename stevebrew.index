@@ -13,7 +13,8 @@
 		<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/sources.xml" />
 		
 		<!-- archetypes -->
-		<file name="background-grifter.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/background-grifter.xml" />
-		<file name="background-woodsman.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/race-entling" />
-	</files>
+		<file name="background-woodsman.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/background-woodsman.xml" />
+		<file name="race-entling.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/race-entling.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/spells.xml" />
+		</files>
 </index>

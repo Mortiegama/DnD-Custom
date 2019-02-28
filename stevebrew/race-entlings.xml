@@ -12,7 +12,7 @@
 	<element name="Entling" type="Race" source="Stevebrew" id="ID_STEVEBREW_RACE_ENTLING">
 		<description>
 			<p>Entlings are powerful tree-like humanoids that typically avoid contact with other humanoids.  They prefer the solitude of their forests, few venturing to the mountains where less fauna grows.  Slow to anger, they will not be the first into a fray but strike fear into the hearts of those against them when they do move into action.</p>
-			<h4>BARK AND LIMBS</h4>
+			<h4>FOREST INFLUENCE</h4>
 			<p>Entlings resemble a bipedal humanoid shape, though tower over many other races.  They can stand between 7 and 8 feet tall though their skin is far more like the bark of a tree.  Entlings have very long arms though still possess digited fingers and toes.  </p>
 			<p class="indent">The habitat an Entling grows to adulthood within (which takes 100 years), has a great influence on their appearance.  Slowly their skin will harden and take an almost bark look which resembles the trees they spend most of their time communing with.  Moss, grass, vines, rot, and other conditions are also pulled from the same habitat.</p>
 			<p class="indent">It is quite common for Entlings to grow fauna most commonly found in their habitat.  That is how you can usually tell where an Entling spent their youth.  After reaching 100 years of age their bodies no longer adapt to new habitats and will continue to grow in the manner they did for the first 100 years of their life.</p>
@@ -47,17 +47,18 @@
 		</setters>
 		<sheet display="false" />
 		<rules>
-			<stat name="Strength" value="2" />
-			<stat name="Constitution" value="1" />
-			<stat name="Speed" value="40" bonus="base" />
+			<stat name="Strength" value="2" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<stat name="Constitution" value="1" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<stat name="Speed" value="40" bonus="base" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
-			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK" />
-			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE" />
-			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN" />
-			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_RESISTANCE" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_SUBRACE" />
 		</rules>
 	</element>	    
 	<element name="Iron Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK">
@@ -100,9 +101,112 @@
 		<sheet>
 			<description>You have resistance to nature damage.</description>
 		</sheet>
+	</element>
+	<element name="Entling Subrace" type="Racial Trait" source="Player’s Handbook" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_SUBRACE">
+		<supports />
+		<requirements />
+		<description>
+			<p>You may choose a Variant race for your Entling</p>
+		</description>
+		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<select type="Sub Race" name="Entling Subrace" supports="Entling" optional="true" />
 		</rules>
-	</element>		
+	</element>
+
+    <element name="Blightwalker" type="Sub Race" source="Stevebrew" id="ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER">
+		<supports>Entling</supports>
+		<description>
+			<h4>DESECRATED INFLUENCE</h4>
+			<p>Blightwalkers vary greatly from typical Entlings, shorter on average by a foot at least, their barkskin far less strong, and many appear to be rotting away.  It is not uncommon for chunks of their bodies to look rotted away; though do not confuse this to mean they are damaged because that is simply the way their bodies adapted.  The bark of a Blightwalker is typically dark gray or black. </p>
+			<p class="indent">It is unknown how an Entling could find itself growing in desecrated lands, though there are rumors that Orcs who have learned the Elvish tongue plant them and whisper to them to wake them up.  Due to their solitude, Blightwalkers rarely see living creatures and are instantly hostile to any other Blightwalker sapling that enters their territory; only a single Blightwalker may call home to a habitat in their youth.  If such occurs they will fight, possibly until one is slain, and the victor takes claim of the habitat.</p>
+			<h4>BLIGHTWALKER NAMES</h4>
+			<p>Blightwalker, like their Entling cousins, take the names of those things which surround them in their habitat as they grow from saplings.</p>
+			<p><strong>Names:</strong> Rothusk, Mosscleft, Splinterstump, Blooddirt, Shattertrunk, Shroomrock, Barrenfield, Flamestone</p>
+			<h4>BLIGHTWALKER TRAITS</h4>
+			<p>Your Blightwalker character has the following racial traits. These traits are also suitable for Blightwalkers who have begun to wander from their desecrated beginnings.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Blightwalkers are hostile nearly from the start of their existence.  They will seek to spread the desecration they grew upon and trend towards Chaotic Evil. </p>
+			<p class="indent"><strong><em>Size.</em></strong> Blightwalker can stand between 6 and 7 feet tall, resembling blackened tree trunks with arms and legs. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Desecrator.</em></strong> You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</p>
+			<p class="indent"><strong><em>Blighted Bark.</em></strong> Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
+			<p class="indent"><strong><em>Gnarled State.</em></strong> When at rest, you can enter a Gnarled State if any dirt is present for your roots.  In this state you cannot attack, move, or defend yourself, but you gain long rest in only six hours and your hit points are boosted temporarily by your level x 10 until you exit the Gnarled State.  If you are rooted in blighted ground, you gain a long rest in only four hours and your hit points are boosted additionally by your level times your Constitution modifier.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
+			<p class="indent"><strong><em>Horrific Gnarled State.</em></strong> Starting at 3rd level, you can enter a Horrific Gnarled State only if you are standing on blighted ground.  While in this state your bark grows dark as a pitch-black night and your arms extend menacingly outwards.  You no longer gain a boost to your hit points, but any creature within a 60-foot radius that can see you must each succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become frightened of you for one minute.  All units on foot also have their speed reduced by 15 feet within a 60-foot radius of you.  Leaving the Horrific Gnarled State takes two minutes.</p>
+			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Sylvan.</p>
+		</description>
+		<setters>
+			<set name="names" type="genderless">Rothusk, Mosscleft, Splinterstump, Blooddirt, Shattertrunk, Shroomrock, Barrenfield, Flamestone</set>
+			<set name="names-format">$(name)</set>
+			<set name="height" modifier="2d8">6'5</set>
+			<set name="weight" modifier="2d6">290 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="Strength" value="1" />
+			<stat name="Constitution" value="2" />
+			<stat name="Speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_DESECRATOR" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_GNARLED_STATE" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_HORRIFIC_GNARLED_STATE" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_NECROTIC_RESISTANCE" />
+			</rules>
+	</element>
+	<element name="Desecrator" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_DESECRATOR">
+		<description>
+			<p>You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</p>
+		</description>
+		<sheet>
+			<description>You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_STEVEBREW_SPELL_DESECRATION" level="0" />
+		</rules>
+	</element>  	
+	<element name="Blighted Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK">
+		<description>
+			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
+		</description>
+		<sheet>
+			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+		</sheet>
+		<rules>
+            <stat name="ac:natural" value="5" bonus="natural" />
+            <stat name="AC" value="ac:natural" equipped="[armor:none]" />					
+			<stat name="AC" value="ac:natural" bonus="armor" equipped="[armor:any]" />
+			<stat name="AC" value="Constitution Modifier" bonus="armor" equipped="[armor:none]" />
+            <grant type="Ignore" id="ID_INTERNAL_IGNORE_AC_DEXTERITY_MODIFIER" />    
+		</rules>
+	</element>    
+	<element name="Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_GNARLED_STATE">
+		<description>
+			<p>When at rest, you can enter a Gnarled State if any dirt is present for your roots.  In this state you cannot attack, move, or defend yourself, but you gain long rest in only six hours and your hit points are boosted temporarily by your level x 10 until you exit the Gnarled State.  If you are rooted in blighted ground, you gain a long rest in only four hours and your hit points are boosted additionally by your level times your Constitution modifier.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
+		</description>
+		<sheet>
+			<description>When at rest, you can enter a Gnarled State if any dirt is present for your roots.  In this state you cannot attack, move, or defend yourself, but you gain long rest in only six hours and your hit points are boosted temporarily by your level x 10 until you exit the Gnarled State.  If you are rooted in blighted ground, you gain a long rest in only four hours and your hit points are boosted additionally by your level times your Constitution modifier.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</description>
+		</sheet>
+	</element>    
+	<element name="Horrific Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_HORRIFIC_GNARLED_STATE">
+		<description>
+			<p>Starting at 3rd level, you can enter a Horrific Gnarled State only if you are standing on blighted ground.  While in this state your bark grows dark as a pitch-black night and your arms extend menacingly outwards.  You no longer gain a boost to your hit points, but any creature within a 60-foot radius that can see you must each succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become frightened of you for one minute.  All units on foot also have their speed reduced by 15 feet within a 60-foot radius of you.  Leaving the Horrific Gnarled State takes two minutes.</p>
+		</description>
+		<sheet>
+			<description>Starting at 3rd level, you can enter a Horrific Gnarled State only if you are standing on blighted ground.  While in this state your bark grows dark as a pitch-black night and your arms extend menacingly outwards.  You no longer gain a boost to your hit points, but any creature within a 60-foot radius that can see you must each succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become frightened of you for one minute.  All units on foot also have their speed reduced by 15 feet within a 60-foot radius of you.  Leaving the Horrific Gnarled State takes two minutes.</description>
+		</sheet>
+	</element>	
+	<element name="Necrotic Resistance" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_NECROTIC_RESISTANCE">
+		<description>
+			<p>You have resistance to necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to necrotic damage.</description>
+		</sheet>
+	</element>
 	
 </elements>

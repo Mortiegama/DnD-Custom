@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <description>Spells from the Player’s Handbook.</description>
+    <author url=".">Stevebrew</author>
+    <update version="0.0.1">
+      <file name="spells.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/spells.xml" />
+    </update>
+  </info>
+
+  <element name="Desecration" type="Spell" source="Stevebrew" id="ID_STEVEBREW_SPELL_DESECRATION">
+    <supports>Blightwalker</supports>
+    <description>
+      <p>When there is some form of dirt beneath your feet, you spread your necrotic touch into the ground to desecrate the area.  This creates a patch of blighted, desecrated ground five feet around you.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">12 hours</set>
+      <set name="range">Touch</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent"></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  
+ </elements>
