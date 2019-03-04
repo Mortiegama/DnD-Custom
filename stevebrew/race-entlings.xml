@@ -49,7 +49,7 @@
 		<rules>
 			<stat name="Strength" value="2" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
 			<stat name="Constitution" value="1" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
-			<stat name="Speed" value="40" bonus="base" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<stat name="Speed" value="30" bonus="base" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
@@ -69,10 +69,8 @@
 			<description>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark line your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
 		</sheet>
 		<rules>
-            <stat name="ac:natural" value="7" bonus="natural" />
-            <stat name="AC" value="ac:natural" equipped="[armor:none]" />					
-			<stat name="AC" value="ac:natural" bonus="armor" equipped="[armor:any]" />
-            <grant type="Ignore" id="ID_INTERNAL_IGNORE_AC_DEXTERITY_MODIFIER" />    
+			<stat name="entling:iron bark" value="17" bonus="base" />
+            <stat name="ac:calculation" value="entling:iron bark" bonus="calculation" alt="Iron Bark (Entling)" />
 		</rules>
 	</element>    
 	<element name="Treeish State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE">
@@ -98,8 +96,8 @@
 		<description>
 			<p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description>As an action, you can touch a creature and cause it to regain {{trait:healing-hands}} hit points. (once / long rest)</description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can touch a creature and cause it to regain {{trait:healing-hands}} hit points. </description>
 		</sheet>
 		<rules>
 			<stat name="trait:healing-hands" value="level"  />
@@ -175,17 +173,21 @@
 	</element>  	
 	<element name="Blighted Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK">
 		<description>
-			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 10 + your Constitution + your Strength modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor or from equipping a shield.</p>
 		</description>
 		<sheet>
-			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+			<description>While you aren’t wearing armor, your AC equals {{ac:blightwalker blighted bark}}. You gain no benefit from wearing armor or from equipping a shield.</description>
 		</sheet>
 		<rules>
-            <stat name="ac:natural" value="5" bonus="natural" />
-            <stat name="AC" value="ac:natural" equipped="[armor:none]" />					
-			<stat name="AC" value="ac:natural" bonus="armor" equipped="[armor:any]" />
-			<stat name="AC" value="Constitution Modifier" bonus="armor" equipped="[armor:none]" />
-            <grant type="Ignore" id="ID_INTERNAL_IGNORE_AC_DEXTERITY_MODIFIER" />    
+			<stat name="ac:blightwalker blighted bark:base" value="10" />
+			<stat name="ac:blightwalker blighted bark:strength" value="strength:modifier" />
+			<stat name="ac:blightwalker blighted bark:constitution" value="constitution:modifier" />
+
+			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:base" />
+			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:strength" />
+			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:constitution" />
+
+			<stat name="ac:calculation" value="ac:blightwalker blighted bark" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Blighted Bark (Blightwalker)" />
 		</rules>
 	</element>    
 	<element name="Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_GNARLED_STATE">
