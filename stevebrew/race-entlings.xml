@@ -32,9 +32,9 @@
 			<p class="indent"><strong><em>Age.</em></strong> Entlings are considered to be adults around the age of 100, while they typically are hewed or forgotten and their age limit is not known otherwise.</p>
 			<p class="indent"><strong><em>Alignment.</em></strong> There are not so numerous an amount of Entlings and they tend to be very solitary.  Willing to help those who join their path, they do not line their paths up with any in particular and lean towards True Neutral.</p>
 			<p class="indent"><strong><em>Size.</em></strong> Entlings can stand between 7 and 8 feet tall, resembling large tree trunks with arms and legs. Your size is Medium.</p>
-			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 40 feet.</p>
-			<p class="indent"><strong><em>Iron Bark.</em></strong> Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark lines your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
-			<p class="indent"><strong><em>Treeish State.</em></strong> When at rest, you can enter the Treeish State if there is non-desecrated dirt for your roots.  In this state you cannot attack, move or defend yourself, but you gain long rest in only four hours and your hit points are boosted temporarily by your level x 10 until you exit the Treeish State.  While in this state you are also capable of providing susitance for yourself without using rations.  You gain no benefit from any items while in this state.  Leaving the Treeish State takes one minute. </p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Iron Bark.</em></strong> Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark line your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p class="indent"><strong><em>Treeish State.</em></strong> You may enter the Treeish State if there is non-desecrated dirt for your roots.  In this state, you cannot attack, move or defend yourself, but you gain long rest in only four hours and you become resistant to damage from all sources, except for fire.  You gain no benefit from any items while in the Treeish State.  Leaving the Treeish State takes one minute. </p>
 			<p class="indent"><strong><em>Nature Born.</em></strong> You have proficiency in the Nature skill.  You were born in nature and are one with nature.</p>
 			<p class="indent"><strong><em>Nature Resistance.</em></strong> You have resistance to nature damage.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Sylvan.</p>
@@ -57,16 +57,16 @@
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
-			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_RESISTANCE" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
+			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURES_TOUCH" requirements="!ID_STEVEBREW_SUBRACE_ENTLING_BLIGHTWALKER" />
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_SUBRACE" />
 		</rules>
 	</element>	    
 	<element name="Iron Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_IRON_BARK">
 		<description>
-			<p>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark lines your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
+			<p>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark line your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
 		</description>
 		<sheet>
-			<description>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark lines your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+			<description>Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark line your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
 		</sheet>
 		<rules>
             <stat name="ac:natural" value="7" bonus="natural" />
@@ -77,10 +77,10 @@
 	</element>    
 	<element name="Treeish State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE">
 		<description>
-			<p>When at rest, you can enter the Treeish State if there is non-desecrated dirt for your roots.  In this state you cannot attack, move or defend yourself, but you gain long rest in only four hours and your hit points are boosted temporarily by your level x 10 until you exit the Treeish State.  You gain no benefit from any items while in this state.  Leaving the Treeish State takes one minute.</p>
+			<p>You may enter the Treeish State if there is non-desecrated dirt for your roots.  In this state, you cannot attack, move or defend yourself, but you gain long rest in only four hours and you become resistant to damage from all sources, except for fire.  You gain no benefit from any items while in the Treeish State.  Leaving the Treeish State takes one minute.</p>
 		</description>
 		<sheet>
-			<description>When at rest, you can enter the Treeish State if there is non-desecrated dirt for your roots.  In this state you cannot attack, move or defend yourself, but you gain long rest in only four hours and your hit points are boosted temporarily by your level x 10 until you exit the Treeish State.  You gain no benefit from any items while in this state.  Leaving the Treeish State takes one minute.</description>
+			<description>You may enter the Treeish State if there is non-desecrated dirt for your roots.  In this state, you cannot attack, move or defend yourself, but you gain long rest in only four hours and you become resistant to damage from all sources, except for fire.  You gain no benefit from any items while in the Treeish State.  Leaving the Treeish State takes one minute.</description>
 		</sheet>
 	</element>    
 	<element name="Nature Born" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN">
@@ -94,13 +94,16 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
 		</rules>
 	</element>	
-	<element name="Nature Resistance" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_RESISTANCE">
+	<element name="Nature's Touch" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURES_TOUCH">
 		<description>
-			<p>You have resistance to nature damage.</p>
+			<p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet>
-			<description>You have resistance to nature damage.</description>
+			<description>As an action, you can touch a creature and cause it to regain {{trait:healing-hands}} hit points. (once / long rest)</description>
 		</sheet>
+		<rules>
+			<stat name="trait:healing-hands" value="level"  />
+		</rules>
 	</element>
 	<element name="Entling Subrace" type="Racial Trait" source="Player’s Handbook" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_SUBRACE">
 		<supports />
@@ -131,8 +134,9 @@
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
 			<p class="indent"><strong><em>Desecrator.</em></strong> You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</p>
 			<p class="indent"><strong><em>Blighted Bark.</em></strong> Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
-			<p class="indent"><strong><em>Gnarled State.</em></strong> When at rest, you can enter a Gnarled State if any dirt is present for your roots.  In this state you cannot attack, move, or defend yourself, but you gain long rest in only six hours and your hit points are boosted temporarily by your level x 10 until you exit the Gnarled State.  If you are rooted in blighted ground, you gain a long rest in only four hours and your hit points are boosted additionally by your level times your Constitution modifier.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
-			<p class="indent"><strong><em>Horrific Gnarled State.</em></strong> Starting at 3rd level, you can enter a Horrific Gnarled State only if you are standing on blighted ground.  While in this state your bark grows dark as a pitch-black night and your arms extend menacingly outwards.  You no longer gain a boost to your hit points, but any creature within a 60-foot radius that can see you must each succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become frightened of you for one minute.  All units on foot also have their speed reduced by 15 feet within a 60-foot radius of you.  Leaving the Horrific Gnarled State takes two minutes.</p>
+			<p class="indent"><strong><em>Gnarled State.</em></strong> You may enter a Gnarled State if any dirt is present for your roots.  In this state, you cannot attack, move, or defend yourself, but you gain long rest in only six hours and you become resistant to damage from all sources, except for fire and radiant.  If you are rooted in blighted ground, you gain a long rest in only four hours and gain resistance to radiant damage.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
+			<p class="indent"><strong><em>Horrific Gnarled State.</em></strong> Starting at 3rd level, you can use your action to unleash your Horrific Gnarled State, causing you to become more tree like, with pitch-black bark, as your arms twist in a horrifying manner and you appear to grow in size. The instant which you transform, other creatures within 10 feet of you that can see you must each succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or become frightened of you until the end of your next turn.  Your transformation lasts for 1 minute or until you end it as a bonus action.  During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell.  The extra necrotic damage equals your level.  Once you use this trait you can’t use it again until you finish a long rest.
+</p>
 			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have resistance to necrotic damage.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Sylvan.</p>
 		</description>
@@ -162,7 +166,7 @@
 		<description>
 			<p>You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</p>
 		</description>
-		<sheet>
+		<sheet usage="1/Long Rest">
 			<description>You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</description>
 		</sheet>
 		<rules>
@@ -171,7 +175,7 @@
 	</element>  	
 	<element name="Blighted Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK">
 		<description>
-			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
+			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
 		</description>
 		<sheet>
 			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
@@ -186,19 +190,26 @@
 	</element>    
 	<element name="Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_GNARLED_STATE">
 		<description>
-			<p>When at rest, you can enter a Gnarled State if any dirt is present for your roots.  In this state you cannot attack, move, or defend yourself, but you gain long rest in only six hours and your hit points are boosted temporarily by your level x 10 until you exit the Gnarled State.  If you are rooted in blighted ground, you gain a long rest in only four hours and your hit points are boosted additionally by your level times your Constitution modifier.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
+			<p>You may enter a Gnarled State if any dirt is present for your roots.  In this state, you cannot attack, move, or defend yourself, but you gain long rest in only six hours and you become resistant to damage from all sources, except for fire and radiant.  If you are rooted in blighted ground, you gain a long rest in only four hours and gain resistance to radiant damage.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
 		</description>
 		<sheet>
-			<description>When at rest, you can enter a Gnarled State if any dirt is present for your roots.  In this state you cannot attack, move, or defend yourself, but you gain long rest in only six hours and your hit points are boosted temporarily by your level x 10 until you exit the Gnarled State.  If you are rooted in blighted ground, you gain a long rest in only four hours and your hit points are boosted additionally by your level times your Constitution modifier.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</description>
+			<description>You may enter a Gnarled State if any dirt is present for your roots.  In this state, you cannot attack, move, or defend yourself, but you gain long rest in only six hours and you become resistant to damage from all sources, except for fire and radiant.  If you are rooted in blighted ground, you gain a long rest in only four hours and gain resistance to radiant damage.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</description>
 		</sheet>
 	</element>    
 	<element name="Horrific Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_HORRIFIC_GNARLED_STATE">
 		<description>
-			<p>Starting at 3rd level, you can enter a Horrific Gnarled State only if you are standing on blighted ground.  While in this state your bark grows dark as a pitch-black night and your arms extend menacingly outwards.  You no longer gain a boost to your hit points, but any creature within a 60-foot radius that can see you must each succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become frightened of you for one minute.  All units on foot also have their speed reduced by 15 feet within a 60-foot radius of you.  Leaving the Horrific Gnarled State takes two minutes.</p>
+			<p>Starting at 3rd level, you can use your action to unleash your Horrific Gnarled State, causing you to become more tree like, with pitch-black bark, as your arms twist in a horrifying manner and you appear to grow in size. The instant which you transform, other creatures within 10 feet of you that can see you must each succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or become frightened of you until the end of your next turn.</p>
+			<p>Your transformation lasts for 1 minute or until you end it as a bonus action.  During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell.  The extra necrotic damage equals your level.</p>
+			<p>Once you use this trait you can’t use it again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description>Starting at 3rd level, you can enter a Horrific Gnarled State only if you are standing on blighted ground.  While in this state your bark grows dark as a pitch-black night and your arms extend menacingly outwards.  You no longer gain a boost to your hit points, but any creature within a 60-foot radius that can see you must each succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or become frightened of you for one minute.  All units on foot also have their speed reduced by 15 feet within a 60-foot radius of you.  Leaving the Horrific Gnarled State takes two minutes.</description>
+		<sheet usage="1/Long Rest">
+			<description>The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Strength saving throw (DC {{horrific gnarled state:dc}}) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal {{level}} extra necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
 		</sheet>
+		<rules>
+			<stat name="horrific gnarled state:dc" value="8" />
+			<stat name="horrific gnarled state:dc" value="proficiency" />
+			<stat name="horrific gnarled state:dc" value="strength:modifier" />
+		</rules>
 	</element>	
 	<element name="Necrotic Resistance" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_NECROTIC_RESISTANCE">
 		<description>
