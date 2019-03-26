@@ -34,7 +34,7 @@
 			<p class="indent"><strong><em>Size.</em></strong> Entlings can stand between 7 and 8 feet tall, resembling large tree trunks with arms and legs. Your size is Medium.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
 			<p class="indent"><strong><em>Iron Bark.</em></strong> Your body is tree-like, which leaves you rather ill-fitted for wearing armor.  Thick layers of bark line your body however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
-			<p class="indent"><strong><em>Treeish State.</em></strong> You may enter the Treeish State if there is non-desecrated dirt for your roots.  In this state, you cannot attack, move or defend yourself, but you gain long rest in only four hours and you become resistant to damage from all sources, except for fire.  You gain no benefit from any items while in the Treeish State.  Leaving the Treeish State takes one minute. </p>
+			<p class="indent"><strong><em>Treeish State.</em></strong> Entlings don’t need to sleep.  Instead, they become inert and appear almost identical to a tree, remaining semiconscious, for 4 hours a day.  While inert, it is difficult to distinguish you from a tree.  After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.   </p>
 			<p class="indent"><strong><em>Nature Born.</em></strong> You have proficiency in the Nature skill.  You were born in nature and are one with nature.</p>
 			<p class="indent"><strong><em>Nature Resistance.</em></strong> You have resistance to nature damage.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Sylvan.</p>
@@ -75,10 +75,10 @@
 	</element>    
 	<element name="Treeish State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_TREEISH_STATE">
 		<description>
-			<p>You may enter the Treeish State if there is non-desecrated dirt for your roots.  In this state, you cannot attack, move or defend yourself, but you gain long rest in only four hours and you become resistant to damage from all sources, except for fire.  You gain no benefit from any items while in the Treeish State.  Leaving the Treeish State takes one minute.</p>
+			<p>Entlings don’t need to sleep.  Instead, they become inert and appear almost identical to a tree, remaining semiconscious, for 4 hours a day.  While inert, it is difficult to distinguish you from a tree.  After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.  .</p>
 		</description>
 		<sheet>
-			<description>You may enter the Treeish State if there is non-desecrated dirt for your roots.  In this state, you cannot attack, move or defend yourself, but you gain long rest in only four hours and you become resistant to damage from all sources, except for fire.  You gain no benefit from any items while in the Treeish State.  Leaving the Treeish State takes one minute.</description>
+			<description>Entlings don’t need to sleep.  Instead, they become inert and appear almost identical to a tree, remaining semiconscious, for 4 hours a day.  While inert, it is difficult to distinguish you from a tree.  After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.  </description>
 		</sheet>
 	</element>    
 	<element name="Nature Born" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_ENTLING_NATURE_BORN">
@@ -130,11 +130,9 @@
 			<p class="indent"><strong><em>Alignment.</em></strong> Blightwalkers are hostile nearly from the start of their existence.  They will seek to spread the desecration they grew upon and trend towards Chaotic Evil. </p>
 			<p class="indent"><strong><em>Size.</em></strong> Blightwalker can stand between 6 and 7 feet tall, resembling blackened tree trunks with arms and legs. Your size is Medium.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
-			<p class="indent"><strong><em>Desecrator.</em></strong> You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</p>
-			<p class="indent"><strong><em>Blighted Bark.</em></strong> Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 15 plus your Constitution modifier (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
-			<p class="indent"><strong><em>Gnarled State.</em></strong> You may enter a Gnarled State if any dirt is present for your roots.  In this state, you cannot attack, move, or defend yourself, but you gain long rest in only six hours and you become resistant to damage from all sources, except for fire and radiant.  If you are rooted in blighted ground, you gain a long rest in only four hours and gain resistance to radiant damage.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
-			<p class="indent"><strong><em>Horrific Gnarled State.</em></strong> Starting at 3rd level, you can use your action to unleash your Horrific Gnarled State, causing you to become more tree like, with pitch-black bark, as your arms twist in a horrifying manner and you appear to grow in size. The instant which you transform, other creatures within 10 feet of you that can see you must each succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or become frightened of you until the end of your next turn.  Your transformation lasts for 1 minute or until you end it as a bonus action.  During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell.  The extra necrotic damage equals your level.  Once you use this trait you can’t use it again until you finish a long rest.
-</p>
+			<p class="indent"><strong><em>Desecrator.</em></strong> You know the desecration cantrip. When you reach 3rd level, you can cast the cause fear spell once and need to finish a long rest before you can cast it again. When you reach 5th level, you can also cast the crown of madness spell once and need to finish a long rest before you can cast it again. Charisma is your spellcasting ability for these spells.</p>
+			<p class="indent"><strong><em>Blighted Bark.</em></strong> Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 13 plus your Constitution modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal. </p>
+			<p class="indent"><strong><em>Gnarled State.</em></strong> Blightwalkers don’t need to sleep.  Instead, they become inert and appear almost identical to a tree, remaining semiconscious, for 4 hours a day.  While inert, it is difficult to distinguish you from a twisted black tree and you remain semiconscious.  After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.  </p>
 			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have resistance to necrotic damage.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Sylvan.</p>
 		</description>
@@ -156,35 +154,35 @@
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_DESECRATOR" />
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK" />
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_GNARLED_STATE" />
-			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_HORRIFIC_GNARLED_STATE" />
 			<grant type="Racial Trait" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_NECROTIC_RESISTANCE" />
 			</rules>
 	</element>
 	<element name="Desecrator" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_DESECRATOR">
 		<description>
-			<p>You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</p>
+			<p>You know the desecration cantrip. When you reach 3rd level, you can cast the cause fear spell once and need to finish a long rest before you can cast it again. When you reach 5th level, you can also cast the crown of madness spell once and need to finish a long rest before you can cast it again. Charisma is your spellcasting ability for these spells.</p>
 		</description>
-		<sheet usage="1/Long Rest">
-			<description>You know the desecration cantrip.  You must finish a long rest to cast this spell once again with this trait.</description>
+		<sheet>
+			<description>You know the desecration cantrip. When you reach 3rd level, you can cast the cause fear spell once and need to finish a long rest before you can cast it again. When you reach 5th level, you can also cast the crown of madness spell once and need to finish a long rest before you can cast it again. Charisma is your spellcasting ability for these spells.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_STEVEBREW_SPELL_DESECRATION" level="0" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="5" />
+
 		</rules>
-	</element>  	
+		</element>  	
 	<element name="Blighted Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK">
 		<description>
-			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 10 + your Constitution + your Strength modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor or from equipping a shield.</p>
+			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 10 + your Constitution (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor or from equipping a shield.</p>
 		</description>
 		<sheet>
-			<description>While you aren’t wearing armor, your AC equals {{ac:blightwalker blighted bark}}. You gain no benefit from wearing armor or from equipping a shield.</description>
+			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; your AC equals {{ac:blightwalker blighted bark}}. You gain no benefit from wearing armor or from equipping a shield.</description>
 		</sheet>
 		<rules>
-			<stat name="ac:blightwalker blighted bark:base" value="10" />
-			<stat name="ac:blightwalker blighted bark:strength" value="strength:modifier" />
+			<stat name="ac:blightwalker blighted bark:base" value="14" />
 			<stat name="ac:blightwalker blighted bark:constitution" value="constitution:modifier" />
 
 			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:base" />
-			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:strength" />
 			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:constitution" />
 
 			<stat name="ac:calculation" value="ac:blightwalker blighted bark" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Blighted Bark (Blightwalker)" />

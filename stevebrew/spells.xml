@@ -12,19 +12,19 @@
   <element name="Desecration" type="Spell" source="Stevebrew" id="ID_STEVEBREW_SPELL_DESECRATION">
     <supports>Blightwalker</supports>
     <description>
-      <p>When there is some form of dirt beneath your feet, you spread your necrotic touch into the ground to desecrate the area.  This creates a patch of blighted, desecrated ground five feet around you.</p>
+      <p>When there is some form of dirt beneath your feet, you spread your necrotic touch into the ground to desecrate the area.  This creates a patch of blighted, desecrated ground five feet around you.  You must finish a long rest to use this spell again.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">0</set>
       <set name="school">Necromancy</set>
       <set name="time">1 action</set>
-      <set name="duration">12 hours</set>
+      <set name="duration">4 hours</set>
       <set name="range">Touch</set>
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent"></set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">Fungus Spores</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
