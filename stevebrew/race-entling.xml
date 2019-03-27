@@ -176,7 +176,7 @@
 			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 13 plus your Constitution modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
 		</description>
 		<sheet>
-			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 13 plus your Constitution modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of {{ac:blightwalker blighted bark}}.  You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:blightwalker blighted bark:base" value="13" />
