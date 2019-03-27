@@ -73,9 +73,7 @@
     </element>
 	
 	<!-- Background Feature Information -->
-	
-	<!-- Lumberjack -->
-    <element name="Feature: Home In The Woods" type="Background Feature" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_HOME_IN_THE_WOODS">
+	<element name="Feature: Home In The Woods" type="Background Feature" source="Stevebrew" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_HOME_IN_THE_WOODS">
         <description>
             <p>You feel most at home in the woods, regardless of where they may be, as they remind you of your youth.  In fact, being in the woods sits quite well with you and you find that your senses are heightened by the familiar surrounds.  Any Perception checks done while you are within 60 feet of a wooded area is increased by 2 due to your familiarity with the woods.  You are also an expert in gathering food, water, and supplies; able to identify what is safe for consumption and what is to be avoided.  For every hour spent exploring, you can gather enough food and water for a full day’s ration or enough supplies to provide shelter, fire, and minor necessities for your party.</p>
         </description>

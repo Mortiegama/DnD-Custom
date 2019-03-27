@@ -4,7 +4,7 @@
 		<name>Entling</name>
 		<description></description>
 		<author url=".">Stevebrew</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="entling.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/race-entling.xml" />
 		</update>
 	</info>
@@ -173,44 +173,29 @@
 		</element>  	
 	<element name="Blighted Bark" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_BLIGHTED_BARK">
 		<description>
-			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 10 + your Constitution (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor or from equipping a shield.</p>
+			<p>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 13 plus your Constitution modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
 		</description>
 		<sheet>
-			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; your AC equals {{ac:blightwalker blighted bark}}. You gain no benefit from wearing armor or from equipping a shield.</description>
+			<description>Despite the somewhat rotted and blighted look of your body, you still have a hardened skin for defense.  Though it may chip or crack, your bark still carries strength; it gives you a base AC of 13 plus your Constitution modifier (your Dexterity modifier doesn't affect this number).  You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
 		</sheet>
 		<rules>
-			<stat name="ac:blightwalker blighted bark:base" value="14" />
+			<stat name="ac:blightwalker blighted bark:base" value="13" />
 			<stat name="ac:blightwalker blighted bark:constitution" value="constitution:modifier" />
 
 			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:base" />
 			<stat name="ac:blightwalker blighted bark" value="ac:blightwalker blighted bark:constitution" />
 
-			<stat name="ac:calculation" value="ac:blightwalker blighted bark" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Blighted Bark (Blightwalker)" />
+			<stat name="ac:calculation" value="ac:blightwalker blighted bark" bonus="calculation" equipped="[armor:none]" alt="Blighted Bark (Blightwalker)" />
 		</rules>
 	</element>    
 	<element name="Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_GNARLED_STATE">
 		<description>
-			<p>You may enter a Gnarled State if any dirt is present for your roots.  In this state, you cannot attack, move, or defend yourself, but you gain long rest in only six hours and you become resistant to damage from all sources, except for fire and radiant.  If you are rooted in blighted ground, you gain a long rest in only four hours and gain resistance to radiant damage.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</p>
+			<p>Blightwalkers don’t need to sleep.  Instead, they become inert and appear almost identical to a tree, remaining semiconscious, for 4 hours a day.  While inert, it is difficult to distinguish you from a twisted black tree and you remain semiconscious.  After resting in this way, you gain the same benefit that a human does from 8 hours of sleep. </p>
 		</description>
 		<sheet>
-			<description>You may enter a Gnarled State if any dirt is present for your roots.  In this state, you cannot attack, move, or defend yourself, but you gain long rest in only six hours and you become resistant to damage from all sources, except for fire and radiant.  If you are rooted in blighted ground, you gain a long rest in only four hours and gain resistance to radiant damage.  You gain no benefit from any items while in this state.  Leaving the Gnarled State takes one minute.</description>
+			<description>Blightwalkers don’t need to sleep.  Instead, they become inert and appear almost identical to a tree, remaining semiconscious, for 4 hours a day.  While inert, it is difficult to distinguish you from a twisted black tree and you remain semiconscious.  After resting in this way, you gain the same benefit that a human does from 8 hours of sleep. </description>
 		</sheet>
 	</element>    
-	<element name="Horrific Gnarled State" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_HORRIFIC_GNARLED_STATE">
-		<description>
-			<p>Starting at 3rd level, you can use your action to unleash your Horrific Gnarled State, causing you to become more tree like, with pitch-black bark, as your arms twist in a horrifying manner and you appear to grow in size. The instant which you transform, other creatures within 10 feet of you that can see you must each succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or become frightened of you until the end of your next turn.</p>
-			<p>Your transformation lasts for 1 minute or until you end it as a bonus action.  During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell.  The extra necrotic damage equals your level.</p>
-			<p>Once you use this trait you can’t use it again until you finish a long rest.</p>
-		</description>
-		<sheet usage="1/Long Rest">
-			<description>The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Strength saving throw (DC {{horrific gnarled state:dc}}) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal {{level}} extra necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
-		</sheet>
-		<rules>
-			<stat name="horrific gnarled state:dc" value="8" />
-			<stat name="horrific gnarled state:dc" value="proficiency" />
-			<stat name="horrific gnarled state:dc" value="strength:modifier" />
-		</rules>
-	</element>	
 	<element name="Necrotic Resistance" type="Racial Trait" source="Stevebrew" id="ID_STEVEBREW_RACIAL_TRAIT_BLIGHTWALKER_NECROTIC_RESISTANCE">
 		<description>
 			<p>You have resistance to necrotic damage.</p>
