@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Dragonlance</name>
-		<description>The 5e Dragonlance Campaign</description>
-		<author url=".">Dragonlance</author>
+		<name>Stevebrew</name>
+		<description>The 5e Stevebrew Collection.</description>
+		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">Stevebrew</author>
 		<update version="0.0.1">
 			<file name="stevebrew.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew.index" />
 		</update>
 	</info>
 
-	<element name="Dragonarmor" type="Magic Item" source="Dragonlance" id="ID_DRAGONLANCE_MAGIC_ITEM_DRAGONARMOR">
+	<element name="Dragonarmor" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_DRAGONARMOR">
 		<description>
 			<p>This +3 Scale Mail counts also as cold weather clothing.  This armor is inlaid with fine gold and silver metal threads.</p>
 		</description>
@@ -30,7 +30,7 @@
 			<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
 		</rules>
 	</element>	
-	<element name="Dragonlance of Kharas" type="Magic Item" source="Dragonlance" id="ID_DRAGONLANCE_MAGIC_ITEM_DRAGONLANCE_OF_KHARAS">
+	<element name="Dragonlance of Kharas" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_DRAGONLANCE_OF_KHARAS">
 		<description>
 			<p>This +2 keen (19/20) superior dragon bane (1d6 per level of the rider) large heavy lance glows with a silver light.  A mounted type of dragonlance is one forged with the Hammer of Kharas.</p>
 			<p class="indent">Mounted or Charging use only.</p>
@@ -49,7 +49,7 @@
 		<rules>
 		</rules>
 	</element>
-	<element name="Bane Longsword, +1" type="Magic Item" source="Dragonlance" id="ID_DRAGONLANCE_MAGIC_ITEM_BANE_LONGSWORD_+1">
+	<element name="Bane Longsword, +1" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_BANE_LONGSWORD_+1">
 		<description>
 			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p class="indent">The bane of this Longsword are undead, you deal an extra 1d6 damage when attacking undead with this weapon.</p>
@@ -68,7 +68,7 @@
 		</setters>
 		<rules />
 	</element>
-	<element name="The Plate of Solamnus" type="Magic Item" source="Dragonlance" id="ID_DRAGONLANCE_MAGIC_ITEM_PLATE_OF_SOLMANUS">
+	<element name="The Plate of Solamnus" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_PLATE_OF_SOLMANUS">
 		<description>
 			<p>The +3 plate mail dates back to some of the first knights of Solamnia.  The plate bestows three negative levels on any non-good aligned creature wearing it.  These negative levels persist as long as the armor is worn and disappear when the armor is removed. The negative levels never result in actual level loss, but they cannot be overcome in any way (including restoration spells) while the armor is worn.</p>
 		</description>
@@ -89,7 +89,7 @@
 			<stat name="ac:armored:enhancement" value="3" bonus="enhancement" />
 		</rules>
 	</element>	
-	<element name="Weathered Boots" type="Magic Item" source="Dragonlance" id="ID_DRAGONLANCE_MAGIC_ITEM_WEATHERED_BOOTS">
+	<element name="Weathered Boots" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_WEATHERED_BOOTS">
 		<description>
 			<p>The wearer is comfortable in temperatures as low as -80 or as high as 165 degrees.  The wearer also has advantage on all saves against fire or cold-based saving throws.  The boots were created by the powerful druid/mage: Benatar. The boots must be attuned to the wearer.</p>
 		</description>
@@ -108,7 +108,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
 		</rules>
 	</element>
-	<element name="Ring of Levistus" type="Magic Item" source="Dragonlance" id="ID_DRAGONLANCE_MAGIC_ITEM_RING_OF_LEVISTUS">
+	<element name="Ring of Levistus" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_RING_OF_LEVISTUS">
 		<description>
 			<p>When a creature is rendered unconscious, they may activate a charge from the ring to regain an amount of hit points equal to one of their hit dice. (50 charges).</p>
 		</description>
@@ -125,7 +125,7 @@
 		<rules>
 		</rules>
 	</element>
-	<element name="Shield of Mizabibu" type="Magic Item" source="Dragonlance" id="ID_DRAGONALANCE_MAGIC_ITEM_SHIELD_OF_MIZABIBU">
+	<element name="Shield of Mizabibu" type="Magic Item" source="Stevebrew" id="ID_DRAGONALANCE_MAGIC_ITEM_SHIELD_OF_MIZABIBU">
 		<description>
 			<p>An escutcheon shaped shield that is comprised of living vines which entangle tightly to form a dense and sturdy shield.</p>
 			<p class="indent">This shield has 2 charges.  While using this shield, when a melee attack against the wielder is blocked, the wielder may use their Reaction to expend one charge to cast Entangle.  The DC for the spell is a DC13 Strength check and the wielder must maintain Concentration on the spell. </p>
