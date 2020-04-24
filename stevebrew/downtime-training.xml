@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Downtime Training</name>
+		<description></description>
+		<author url=".">Stevebrew</author>
+		<update version="0.0.1">
+			<file name="downtime-training.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/downtime-training.xml" />
+		</update>
+	</info>
+	
+	<element name="Downtime Training - Tools (1)" type="Option" source="Stevebrew" id="ID_STEVEBREW_DOWNTIME_TRAINING_TOOLS_1">
+		<description>
+			<p>After spending enough workweeks training, you gain proficiency with one additional tool.</p>
+		</description>
+		<setters>
+			<set name="short">Proficiency with one additional tool.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Downtime Training - Tool 1" supports="Artisan tools" />
+		</rules>
+	</element>
+	
+	<element name="Downtime Training - Tools (2)" type="Option" source="Stevebrew" id="ID_STEVEBREW_DOWNTIME_TRAINING_TOOLS_2">
+		<description>
+			<p>After spending enough workweeks training, you gain proficiency with two additional tools.</p>
+		</description>
+		<setters>
+			<set name="short">Proficiency with two additional tools.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Downtime Training - Tool 2" supports="Artisan tools" />
+		</rules>
+	</element>
+	
+	<element name="Downtime Training - Languages (1)" type="Option" source="Stevebrew" id="ID_STEVEBREW_DOWNTIME_TRAINING_LANGUAGES_1">
+		<description>
+			<p>After spending enough workweeks training, you are able to speak an additional language.</p>
+		</description>
+		<setters>
+			<set name="short">Proficiency with one additional language.</set>
+		</setters>
+		<rules>
+			<select type="Language" name="Downtime Training - Languages 1" />
+		</rules>
+	</element>
+	
+	<element name="Downtime Training - Languages (2)" type="Option" source="Stevebrew" id="ID_STEVEBREW_DOWNTIME_TRAINING_LANGUAGES_2">
+		<description>
+			<p>After spending enough workweeks training, you are able to speak an additional language.</p>
+		</description>
+		<setters>
+			<set name="short">Proficiency with one additional language.</set>
+		</setters>
+		<rules>
+			<select type="Language" name="Downtime Training - Languages 2" />
+		</rules>
+	</element>
+</elements>	

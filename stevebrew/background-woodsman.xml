@@ -22,10 +22,10 @@
 				<strong>Tool Proficiencies:</strong> Carpenters' Tools.<br/>
             </p>
             <div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_HOME_IN_THE_WOODS" />
-			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_HUNTER" />
+			<!-- div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_HUNTER" />
 			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_LUMBERJACK" />
 			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_SURVIVALIST" />
-			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_TRAPPER" />
+			<div element="ID_STEVEBREW_BACKGROUND_WOODSMAN_VARIANT_TRAPPER" /-->
         </description>
 		
 		<!-- Qualities added to the Background -->
@@ -34,7 +34,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
 			<grant type="Proficiency" name="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
             <grant type="Background Feature" id="ID_STEVEBREW_BACKGROUND_WOODSMAN_HOME_IN_THE_WOODS" />
-            <select type="Background Variant" name="Woodsman Variant" supports="WM Variant" optional="true" />         
+            <!-- select type="Background Variant" name="Woodsman Variant" supports="WM Variant" optional="true" /-->         
 			<select name="Personality Trait" type="List" number="2">
                 <item id="1">My hands are rough and my face weathered, showing the hard life of work I've endured.</item>
                 <item id="2">I am more than happy to tell you about the woods; even if you do not care to listen.</item>

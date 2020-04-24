@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Stevebrew</name>
+		<description>The 5e Stevebrew Collection.</description>
+		<author url="http://www.dandwiki.com/wiki/5e_Homebrew">Stevebrew</author>
+		<update version="0.0.1">
+			<file name="stevebrew.index" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew.index" />
+		</update>
+	</info>
+
+	<element name="Cloak of Hellhound Pelt" type="Magic Item" source="Stevebrew" id="ID_STEVEBREW_MAGIC_ITEM_CLOAK_OF_HELLHOUND_PELT">
+		<description>
+			<p>Crafted from the pelt of a Hellhound, you have resistance to fire damage while wearing this cloak.</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, hellhound, fire resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>	
+</index>

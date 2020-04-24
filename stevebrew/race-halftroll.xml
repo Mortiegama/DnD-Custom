@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Half-Troll</name>
+		<update version="0.1">
+			<file name="race-halftroll.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-halforc.xml" />
+		</update>
+	</info>
+	<element name="Half-Troll" type="Race" source="Stevebrew" id="STEVEBREW_RACE_HALFTROLL">
+		<description>
+			<p class="flavor">Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, orc and human tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.</p>
+			<h4>SCARRED AND STRONG</h4>
+			<p>Half-orcs’ grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see. Half-orcs stand between 6 and 7 feet tall and usually weigh between 180 and 250 pounds.</p>
+			<p class="indent">Orcs regard battle scars as tokens of pride and ornamental scars as things of beauty. Other scars, though, mark an orc or half-orc as a former slave or a disgraced exile. Any half-orc who has lived among or near orcs has scars, whether they are marks of humiliation or of pride, recounting their past exploits and injuries. Such a half-orc living among humans might display these scars proudly or hide them in shame.</p>
+			<h4>THE MARK OF GRUUMSH</h4>
+			<p>The one-eyed god Gruumsh created the orc s, and even those orcs who turn away from his worship can’t fully escape his influence. The same is true of half-orcs, though their human blood moderates the impact of their orcish heritage. Some half-orcs hear the whispers of Gruumsh in their dreams, calling them to unleash the rage that simmers within them. Others feel Gruumsh’s exultation when they join in melee combat—and either exult along with him or shiver with fear and loathing. Half-orcs are not evil by nature, but evil does lurk within them, whether they embrace it or rebel against it.</p>
+			<p class="indent">Beyond the rage of Gruumsh, half-orcs feel emotion powerfully. Rage doesn’t just quicken their pulse, it makes their bodies burn. An insult stings like acid, and sadness saps their strength. But they laugh loudly and heartily, and simple bodily pleasures—feasting, drinking, wrestling, drumming, and wild dancing—fill their hearts with joy. They tend to be short-tempered and sometimes sullen, more inclined to action than contemplation and to fighting than arguing. The most accomplished half-orcs are those with enough selfcontrol to get by in a civilized land.</p>
+			<h4>TRIBES AND SLUMS</h4>
+			<p>Half-orcs most often live among orc s. Of the other races, humans are most likely to accept half-orcs, and halforcs almost always live in human lands when not living among orc tribes. Whether proving themselves among rough barbarian tribes or scrabbling to survive in the slums of larger cities, half-orcs get by on their physical might, their endurance, and the sheer determination they inherit from their human ancestry.</p>
+			<h4>HALF-ORC NAMES</h4>
+			<p>Half-orcs usually have names appropriate to the culture in which they were raised. A half-orc who wants to fit in among humans might trade an orc name for a human name. Some half-orcs with human names decide to adopt a guttural orc name because they think it makes them more intimidating.</p>
+			<ul class="unstyled">
+				<li><strong>Male Orc Names:</strong> Dench, Feng, Gell, Henk, Holg, Imsh, Keth, Krusk, Mhurren, Ront, Shump, Thokk</li>
+				<li><strong>Female Orc Names:</strong> Baggi, Emen, Engong, Kansif, Myev, Neega, Ovak, Ownka, Shautha, Sutha, Vola, Volen, Yevelda</li>
+			</ul>
+			<h4>HALF-TROLL TRAITS</h4>
+			<p>Your half-troll character has certain traits deriving from your troll ancestry.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1, and your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Half-trolls mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Half-trolls inherit a tendency toward chaos from their troll parents and are not strongly inclined toward good. Half-trolls raised among trolls and willing to live out their lives among them are usually evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Half-trolls are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Thanks to your troll blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Keen Sense.</em></strong> You gain proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Superior Healing.</em></strong> Your body has an accelerated healing from your Troll parent. When you are healed by any source you may roll an additional 1d4 to add to the amounted healed. You can use this feature a number of times equal to your Constituion modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Giant.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Dench, Feng, Gell, Henk, Holg, Imsh, Keth, Krusk, Mhurren, Ront, Shump, Thokk</set>
+			<set name="names" type="female">Baggi, Emen, Engong, Kansif, Myev, Neega, Ovak, Ownka, Shautha, Sutha, Vola, Volen, Yevelda</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d10">4'10"</set>
+			<set name="weight" modifier="2d6">140 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1"/>
+			<stat name="constitution" value="2"/> 
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SENSE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_POWERFUL_BUILD" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUPERIOR_HEALING" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />
+		</rules>
+	</element>	
+	<element name="Keen Sense" type="Racial Trait" source="Stevebrew" id="ID_RACIAL_TRAIT_KEEN_SENSE">
+		<description>
+			<p>You gain proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Perception skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+   <element name="Powerful Build" type="Racial Trait" source="Stevebrew" id="ID_RACIAL_TRAIT_POWERFUL_BUILD">
+    <description>
+      <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+    </description>
+    <sheet>
+      <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+    </sheet>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+    </rules>
+  </element>
+	<element name="Superior Healing" type="Racial Trait" source="Stevebrew" id="ID_RACIAL_TRAIT_SUPERIOR_HEALING">
+		<description>
+			<p>Your body has an accelerated healing from your Troll parent. When you are healed by any source you may activate your suprior healing and regain additional hit points equal to half your level. You can use this feature a number of times equal to your Constituion modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{superior-healing:count}}/Long Rest">
+			<description>When you are healed you may activate your superior healing and regain {{trait:superior-healing}} additional hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="superior-healing:count" value="1" bonus="superior healing"/>
+			<stat name="superior-healing:count" value="constitution:modifier" bonus="superior healing"/>
+			<stat name="trait:superior-healing" value="level" />
+		</rules>
+	</element>
+</elements>
