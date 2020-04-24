@@ -11,6 +11,12 @@
 	
 	<files>
 		<file name="sources.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/sources.xml" />
-		
-
+		<file name="class-oathofjudement.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/class-oathofjudgement.xml" />
+		<file name="background-woodsman.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/background-woodsman.xml" />
+		<file name="items-dragonlance.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/items-dragonlance.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/items-wondrous.xml" />
+		<file name="race-entling.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/race-entling.xml" />
+		<file name="race-halftroll.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/race-halftroll.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/Mortiegama/DnD-Custom/master/stevebrew/spells.xml" />
+	</files>
 </index>
